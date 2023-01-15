@@ -35,6 +35,9 @@ require_once('functions.php');
         <li class="nav-item">
           <a class="nav-link <?= is_active('menu') ?>" href="menu.php">Menu</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link <?= is_active('newsletter') ?>" href="newsletter.php">Newsletter</a>
+        </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

@@ -1,6 +1,6 @@
 <?php
 $title = 'Notre menu';
-include_once('header.php');
+include_once('elements/header.php');
 
 $lignes = file(__DIR__.DIRECTORY_SEPARATOR.'data'.DIRECTORY_SEPARATOR.'menu.csv');
 foreach($lignes as $k => $ligne) {
@@ -29,4 +29,4 @@ dump($lignes);
     <?php endforeach ?>
 </div>
 
-<?php require_once('footer.php'); ?>
+<?php require_once('elements/footer.php'); ?>
