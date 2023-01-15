@@ -1,7 +1,7 @@
 <?php 
 declare(strict_types=1);
-require_once('header.php'); 
-require_once('config.php');
+require_once('elements/header.php'); 
+require_once('data/config.php');
 
 date_default_timezone_set('Africa/Casablanca');
 
@@ -71,4 +71,4 @@ $is_open = in_creneaux($time, $creneaux);
     </div>
 </div>
 
-<?php require_once('footer.php'); ?>
+<?php require_once('elements/footer.php'); ?>
