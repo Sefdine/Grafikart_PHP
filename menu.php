@@ -2,10 +2,11 @@
 $title = 'Notre menu';
 include_once('header.php');
 
-$lignes = file(__DIR__.DIRECTORY_SEPARATOR.'data'.DIRECTORY_SEPARATOR.'menu.txt');
+$lignes = file(__DIR__.DIRECTORY_SEPARATOR.'data'.DIRECTORY_SEPARATOR.'menu.csv');
 foreach($lignes as $k => $ligne) {
-    $lignes[$k] = explode("\t", trim($ligne));
+    $lignes[$k] = str_getcsv(trim($ligne, " \n\r\t\v\x00,"));
 }
+dump($lignes);
 ?>
 
 <div class="container">
